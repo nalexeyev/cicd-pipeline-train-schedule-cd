@@ -10,7 +10,7 @@ pipeline {
         }
         stage('DeployStaging') {
             steps {
-                echo 'Running deploy automation'
+                echo 'Running staging deploy automation'
                 sshPublisher(
                     publishers: [
                         sshPublisherDesc(
